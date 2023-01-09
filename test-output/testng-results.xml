@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T12:34:07 IST" name="Default suite" finished-at="2023-01-06T12:34:21 IST" duration-ms="14250">
+    <groups>
+    </groups>
+    <test started-at="2023-01-06T12:34:07 IST" name="Default test" finished-at="2023-01-06T12:34:21 IST" duration-ms="14250">
+      <class name="com.telus.testcases.TestMethodsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:00 IST" name="launchApplication" finished-at="2023-01-06T12:34:07 IST" duration-ms="6081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="Sheet1(java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:07 IST" name="Sheet1" data-provider="testdata" finished-at="2023-01-06T12:34:20 IST" duration-ms="12987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pavan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[reddy]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*Pavan@4331]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sheet1 -->
+        <test-method signature="closeApplicstion()[pri:8, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:20 IST" name="closeApplicstion" finished-at="2023-01-06T12:34:21 IST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicstion -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:21 IST" name="closeApplication" finished-at="2023-01-06T12:34:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.telus.testcases.TestMethodsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
