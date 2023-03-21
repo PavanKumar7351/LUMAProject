@@ -1,24 +1,15 @@
 package com.telus.basePackage;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
-import com.telus.utilities.TestUtilites;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -26,23 +17,7 @@ public class TestBase  {
 	public static WebDriver driver;
 	public static Properties pro;
 
-	public String captureScreenshot(String screenshotName, String result) {
-        String date = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
 
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File srcFile = ts.getScreenshotAs(OutputType.FILE);
-
-
-        String destPath = "./screenshots/" + screenshotName + "/" + result + "_" + date + ".png";
-        File destFile = new File(destPath);
-
-        try {
-            FileUtils.copyFile(srcFile, destFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return destPath;
-    }
 
 	@BeforeSuite
 	public static void launchApplication() {
@@ -69,8 +44,8 @@ public class TestBase  {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtilites.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtilites.IMPLICIT_WAIT,TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(TestUtilites.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(TestUtilites.IMPLICIT_WAIT,TimeUnit.SECONDS);
 		driver.get(pro.getProperty("testURL"));
 
 	}

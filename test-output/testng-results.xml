@@ -1,42 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+<testng-results ignored="15" total="16" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-06T12:34:07 IST" name="Default suite" finished-at="2023-01-06T12:34:21 IST" duration-ms="14250">
+  <suite started-at="2023-03-14T10:29:44 IST" name="Default suite" finished-at="2023-03-14T10:29:44 IST" duration-ms="41">
     <groups>
     </groups>
-    <test started-at="2023-01-06T12:34:07 IST" name="Default test" finished-at="2023-01-06T12:34:21 IST" duration-ms="14250">
+    <test started-at="2023-03-14T10:29:44 IST" name="Default test" finished-at="2023-03-14T10:29:44 IST" duration-ms="41">
       <class name="com.telus.testcases.TestMethodsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:00 IST" name="launchApplication" finished-at="2023-01-06T12:34:07 IST" duration-ms="6081" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@4189d70b]" started-at="2023-03-14T10:29:31 IST" name="launchApplication" finished-at="2023-03-14T10:29:44 IST" duration-ms="13267" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:63342/devtools/browser/ffffaf50-295e-474d-904e-c5f19f24b93b
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'BA-000311899', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63342/devtools/browser/ffffaf50-295e-474d-904e-c5f19f24b93b
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'BA-000311899', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:258)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at com.telus.basePackage.TestBase.launchApplication(TestBase.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="Sheet1(java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:07 IST" name="Sheet1" data-provider="testdata" finished-at="2023-01-06T12:34:20 IST" duration-ms="12987" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[reddy]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[*Pavan@4331]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Sheet1 -->
-        <test-method signature="closeApplicstion()[pri:8, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:20 IST" name="closeApplicstion" finished-at="2023-01-06T12:34:21 IST" duration-ms="726" status="PASS">
+        <test-method signature="closeApplicstion()[pri:16, instance:com.telus.testcases.TestMethodsTest@4189d70b]" started-at="2023-03-14T10:29:44 IST" name="closeApplicstion" finished-at="2023-03-14T10:29:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:63342/devtools/browser/ffffaf50-295e-474d-904e-c5f19f24b93b
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'BA-000311899', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63342/devtools/browser/ffffaf50-295e-474d-904e-c5f19f24b93b
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'BA-000311899', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:258)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at com.telus.basePackage.TestBase.launchApplication(TestBase.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicstion -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@6bea52d4]" started-at="2023-01-06T12:34:21 IST" name="closeApplication" finished-at="2023-01-06T12:34:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.telus.testcases.TestMethodsTest@4189d70b]" started-at="2023-03-14T10:29:44 IST" name="closeApplication" finished-at="2023-03-14T10:29:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

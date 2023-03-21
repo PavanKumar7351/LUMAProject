@@ -5,7 +5,7 @@
     <classes>
       <class name="com.telus.testcases.TestMethodsTest">
         <methods>
-          <include name="Sheet1" invocation-numbers="0"/>
+          <include name="closeApplicstion"/>
           <include name="launchApplication"/>
           <include name="closeApplication"/>
         </methods>

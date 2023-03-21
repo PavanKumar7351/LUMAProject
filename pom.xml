@@ -67,6 +67,7 @@
               <!--suppress UnresolvedMavenProperty -->
               <argLine>-Dcucumber.filter.tags='${cucumber.filter.tags}'</argLine>
             </properties>
+            <suiteXmlFiles>jenkins.xml</suiteXmlFiles>
           </configuration>
         </plugin>
         <plugin>
@@ -238,5 +239,22 @@
       <artifactId>json</artifactId>
       <version>${json-version}</version>
     </dependency>
+    	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.59</version>
+	</dependency>
+
+
+     <!-- TestNG Dependency -->
+
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.6.0</version>
+	    <scope>test</scope>
+	</dependency>
+
   </dependencies>
 </project>

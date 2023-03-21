@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  Jenkins Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Jenkins Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 20 14:30:30 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>181 seconds (181079 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.SignIn()'><b>SignIn</b><br>Test class: com.telus.testcases.TestMethodsTest<br>Parameters: *Pavan@4331</td>
+<td></td>
+<td>15</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.Address()'><b>Address</b><br>Test class: com.telus.testcases.TestMethodsTest<br>Parameters: Andhra Pradesh, kurnool, India, Andhra Pradesh, 518518, 9898989898<br/>
+<a href="#Output-2083644432" onClick='toggleBox("Output-2083644432", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2083644432" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2083644432">
+Address is :Andhra Pradesh<br/>
+City is :kurnool<br/>
+Country is :India<br/>
+State is :Andhra Pradesh<br/>
+Pin code  is :518518<br/>
+phone number is :9898989898<br/>
+Next Button is Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.closeApplicstion()'><b>closeApplicstion</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>0</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.CreateAccount()'><b>CreateAccount</b><br>Test class: com.telus.testcases.TestMethodsTest<br>Parameters: pavan, reddy, *Pavan@4331</td>
+<td></td>
+<td>12</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.equipmentPage()'><b>equipmentPage</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>12</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.signOut()'><b>signOut</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>13</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.paymentPage()'><b>paymentPage</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>10</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.logOut()'><b>logOut</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>14</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.dropDown()'><b>dropDown</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>41</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.productSelection()'><b>productSelection</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>17</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.productPage()'><b>productPage</b><br>Test class: com.telus.testcases.TestMethodsTest<br/>
+<a href="#Output-1704065258" onClick='toggleBox("Output-1704065258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1704065258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1704065258">
+Product add to cart<br/>
+Quantity is clear<br/>
+Quantity is 2<br/>
+Product is added in cart<br/>
+Cart Button is clicked<br/>
+Proced to checked is clicked<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.successPage()'><b>successPage</b><br>Test class: com.telus.testcases.TestMethodsTest<br/>
+<a href="#Output-1036343065" onClick='toggleBox("Output-1036343065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1036343065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1036343065">
+Prodcut Successfully order message is :Thank you for your purchase!<br/>
+Your Transaction code is : 000019332.<br/>
+Total message of the product is :Your order number is: 000019332.<br/>
+Continue shoping button is clicked<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+<tr>
+<td title='com.telus.testcases.TestMethodsTest.logo()'><b>logo</b><br>Test class: com.telus.testcases.TestMethodsTest</td>
+<td></td>
+<td>1</td>
+<td>com.telus.testcases.TestMethodsTest@4189d70b</td></tr>
+</table><p>
+</body>
+</html>
